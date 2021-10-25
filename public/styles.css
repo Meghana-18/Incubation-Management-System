@@ -1,0 +1,411 @@
+.mainDiv{
+  display: flex;
+}
+
+.Rectangle-41 {
+  width: 500px;
+  height: 100%;
+  padding: 120px 0 258px;
+  background-color: #34a0a4;
+}
+
+body{
+  margin: 0px;
+  overflow-y: auto;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scrollDisabled {   
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.Hello-Mentor {
+  
+  padding-top: 50px;
+  margin: auto;
+  font-family: Rosario;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.Enter-your-personal-details-to-start-with-us {
+  margin: 40px 0;
+  font-family: Rosario;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+
+.Rectangle-45 {
+  margin-left: 210px;
+  text-align: center;
+  font-family: Rosario;
+}
+
+.Login {
+  width: 376px;
+  height: 80px;
+  margin: 20px 87px 0 230px;
+  font-family: Rosario;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  flex-grow: 1;
+}
+
+.Rectangle-42 {
+  margin: 0 151px 15px 380px;
+  background-color: #c4c4c4;
+}
+
+.or-use-your-email-account {
+  width: 551px;
+  height: 30px;
+  margin: 0 0 10px 142px;
+  font-family: Rosario;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.Rectangle-43 {
+  margin: 10px 29px 10px 154px;
+}
+
+.Rectangle-44 {
+
+  margin: 10px 29px 10px 154px;
+
+}
+
+.Forgot-your-password {
+  width: 551px;
+  height: 30px;
+  margin: 20px 0 0 142px;
+  font-family: Rosario;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.Rectangle-40 {
+  margin: 5px 177px 62px 360px;
+  border-radius: 10px;
+  background-color: #34a0a4;
+  font-weight: bold;
+  font-stretch: condensed;
+  width: 100px;
+  height: 40px;
+}
+
+.mentor-img{
+  padding: 25px 420px;
+  align-self: center;
+  text-align: center;
+}
+
+/*HEADING*/
+.big-heading, .cta-heading{
+	font-weight: 900;
+	font-size: 3.5rem;
+	line-height: 1.5;
+}
+
+/*PADDING*/
+.container-fluid{
+	padding: 7% 15%;
+}
+
+/*CUSTOM classes*/
+.colored{
+	background-color: #34a0a4;
+	color:white;
+}
+.white{
+	background-color: white;
+}
+
+/*NAVBAR*/
+.navbar{
+	padding: 0 0 4.5rem;
+}
+.navbar-brand{
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2.5rem;
+}
+.nav-item{
+	padding:0 18px;
+}
+.nav-link{
+	font-size:1.2rem;
+	font-weight:400;
+}
+
+/*DOWNLOAD buttons*/
+.download{
+	margin:5% 3% 5% 0;
+}
+
+/*TITLE section*/
+#title .container-fluid{
+	text-align: left;
+	padding: 3% 15% 7%;
+}
+.title-img{
+	width: 40%;
+	height: 60%;
+	position: absolute;
+	right:5%;
+}
+
+.container-first{
+  padding: 5% 10%;
+}
+
+/*FEATURES section*/
+#features{	
+	position: relative;
+  padding: 0% 10%;
+}
+.feature-box{
+	padding:5%;
+}
+.features-icon{
+	color:#212529;
+	margin-bottom: 1rem;
+  padding: 0% 40%;
+}
+.features-icon:hover{
+	color:#34a0a4;
+}
+
+/*TESTIMONIAL section*/
+#testimonials{
+	background-color: #212529;
+}
+
+.test-img{
+	width:10%;
+	border-radius:100%;
+	margin: 20px;
+}
+
+.testimonial-text{
+  text-align: center;
+  padding: 10%;
+  font-size: 1.5rem;
+}
+
+/*PRESS section*/
+#press{
+	background-color: #212529;
+	padding-bottom: 3%;
+}
+#press img{
+	width: 15%;
+	margin:20px 20px 50px;
+}
+
+/*PRICING section*/
+#pricing{
+	padding:60px;
+}
+.pricing{
+	padding:3% 2%;
+}
+
+.pricing-bg{
+  background-color: #34a0a4;
+}
+
+/*FOOTER section*/
+#footer i{
+	margin: 20px 10px;
+}
+
+.footer-text{
+  text-align: center;
+}
+
+.container-footer{
+  padding: 1% 5%;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 1028px){
+	.title-img{
+		position: static;
+		transform: rotate(0deg);
+	}
+	#title{
+		text-align: center;
+	}
+}
+
+.about-css{
+  padding: 40px 0px;
+}
+
+h3{
+	font-size:1.5rem;
+  text-align: center;
+}
+
+.features-text{
+  text-align: center;
+}
+
+.startupdashboard-buttons{
+  width: 200px;
+}
+
+.Admin-Login {
+  
+  width: 1341px;
+  height: 862px;
+  flex-grow: 0;
+ padding-top: 50px;
+  background-color: #34a0a4;
+}
+
+.Rectangle-54 {
+  width: 308px;
+  height: 420px;
+  padding: 0px 50px;
+  margin: 0px 500px;
+  background-color: #fff;
+}
+
+.admin-login-text{
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Rosario;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  padding-top: 5px;
+  letter-spacing: normal;
+}
+
+.admin-button{
+  margin-left: 70px;
+  background-color: #c4c4c4;
+}
+
+.admin-email{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.admin-submit-button{
+  margin-left: 70px;
+  background-color: #34a0a4;
+  font-weight: bold;
+  font-stretch: condensed;
+  border-radius: 10px;
+}
+
+.RectangleForm{
+  background-color: #fff;
+  margin-left: 3%;
+  margin-right: 8%;
+  padding-left: 18%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+
+}
+
+.Mentorform{
+  padding-top: 30px;
+}
+
+.MentorHeading{
+  text-align: center;
+  margin-right: 25%;
+  padding-bottom: 1%;
+}
+
+.MentorReportUpload{
+  padding-left: 10%;
+  padding-right: 22%;
+  padding-top: 5%;
+  margin-left: 15%;
+}
+
+.ReportButton{
+  padding-left: 10%;
+  padding-right: 19%;
+  padding-top: 5%;
+  margin-left: 25%;
+}
+
+.ReportForm{
+  float: right;
+  padding-bottom: 50%;
+}
+
+.createdForm{
+  padding-left: 5%;
+  padding-top: 1%;
+}
+
+.paymentForm{
+  padding-left: 12%;
+  padding-top: 1.5%;
+}
+
+.paymentCard{
+  padding-left: 5%;
+  padding-top: 1.5%;
+}
+
+.searchBar{
+  margin: 5%;
+}
+
+.searchResult{
+  padding-left: 14%;
+  padding-top: 3%;
+}
+
+.searchImage{
+  margin: 0 180px ;
+}
+
+.img-caption{
+  text-align: center;
+}
