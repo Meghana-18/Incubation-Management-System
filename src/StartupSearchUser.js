@@ -12,7 +12,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Figure from 'react-bootstrap/Figure';
 import Card from 'react-bootstrap/Card';
 
-function PersonnelSearch(){
+function StartupSearchUser(){
 
     let history= useHistory();
 
@@ -23,17 +23,18 @@ function PersonnelSearch(){
         <div>
         
         <ButtonGroup className="d-flex">
-        <Button variant="outline-dark" onClick={() => {history.push("/Admindashboard");}}>My Profile</Button>
-        <Button variant="outline-dark">Meetings</Button>
-        <Button variant="outline-dark" onClick={() => {history.push("/Personnelsearch");}}>Personnel Search</Button>
-        <Button variant="outline-dark">Forms & Reports</Button>
-        <Button variant="outline-dark" onClick={() => {history.push("/Adminlogin");}} >Logout</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/Startupdashboard");}}>My Profile</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/StartupSearchUser");}}>Mentor Search</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/StartupSearch");}}>Meetings</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/StartupReport");}}>Reports</Button>
+        <Button variant="outline-dark"onClick={() => {history.push("/Startuppayment");}}>Payment</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/Startuplogin");}}>Logout</Button>
         
         </ButtonGroup>
         </div>
         <div className="mainDiv">
         <div className="Rectangle-41 ">
-        <h6 className="Hello-Mentor">User Search</h6>
+        <h6 className="Hello-Mentor">Mentor Search</h6>
         <Form className="d-flex searchBar">
         <FormControl
             type="search"
@@ -52,10 +53,11 @@ function PersonnelSearch(){
             height={100}
             className="searchImage"
             alt="171x180"
-            src="https://media-exp1.licdn.com/dms/image/C4D0BAQGimFCMKO9bvA/company-logo_200_200/0/1519952212921?e=2159024400&v=beta&t=95j9ntdG5tllaR0KX4p6A-VNVt1oAcV2QWhtJ3zPlVc"
-             />
+            src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                
+            />
              <Figure.Caption className="img-caption">
-            Startup<br /> Udaan: A B2B platform for small & medium businesses in India. 
+            Mentor<br /> Sales Mentor: Saving companies time and money with automated expense reports.
         </Figure.Caption>
         </Figure>
         <Card>
@@ -63,9 +65,9 @@ function PersonnelSearch(){
             <Card.Title>Contact</Card.Title>
             <Card.Text>
                 <ul>
-                <li>Website : http://udaansky.com</li>
-                <li>Email : udaanflyhigh@gmail.com</li>
-                <li>Adress: Prospect Place 158, Hyderabad, Telangana, India</li>
+                <li>Website : http://naomitalent.com</li>
+                <li>Email : naomiaiready@gmail.com</li>
+                <li>Adress: Prospect Place 158, Brooklyn, New-York 11238, US</li>
             </ul>
             </Card.Text>
             </Card.Body>
@@ -79,4 +81,4 @@ function PersonnelSearch(){
     )
 }
 
-export default PersonnelSearch;
+export default StartupSearchUser;

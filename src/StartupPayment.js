@@ -31,10 +31,10 @@ function StartupPayment(){
         
         <ButtonGroup className="d-flex">
         <Button variant="outline-dark" onClick={() => {history.push("/Startupdashboard");}}>My Profile</Button>
-        <Button variant="outline-dark">Meetings</Button>
-        <Button variant="outline-dark"  onClick={() => {history.push("/Startupreport");}}>Reports</Button>
-        
-        <Button variant="outline-dark" onClick={() => {history.push("/Startuppayment");}}>Payment</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/StartupSearchUser");}}>Mentor Search</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/StartupSearch");}}>Meetings</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/StartupReport");}}>Reports</Button>
+        <Button variant="outline-dark"onClick={() => {history.push("/Startuppayment");}}>Payment</Button>
         <Button variant="outline-dark" onClick={() => {history.push("/Startuplogin");}}>Logout</Button>
         
         </ButtonGroup>

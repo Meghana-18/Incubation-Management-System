@@ -1,10 +1,34 @@
-import React from "react";
+import React,{useState} from "react";
 import {RemoveScrollBar} from 'react-remove-scroll-bar';
 import { useHistory, Link } from 'react-router-dom';
+import axios from "axios";
 
 function MentorSignupButton(props){
 
     let history= useHistory();
+    
+    const [user, setUser] = useState({
+        email:"",
+        password:"",
+        reEnterPassword:""
+    })
+
+    const handleChange = e =>{
+        const{name, value} = e.target;
+        setUser({
+            ...user,
+            [name]: value
+        })
+    }
+
+    const register =() =>{
+        const {email,password,reEnterPassword} = user
+        if(email && password && (password === reEnterPassword))
+        {
+            axios.post("http://localhost:3000/MentorForm.js",user).then(res=>console.log(res))
+        }
+        
+    }
 
     return (
     <div className="mainDiv">
@@ -21,16 +45,16 @@ function MentorSignupButton(props){
         <form>
         <div class="form-group Rectangle-43">
             <label for="exampleInputEmail1">{props.label1}</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+            <input type="email" name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={handleChange}/>
             <small id="emailHelp" class="form-text text-muted">{props.text5}</small>
         </div>
         <div class="form-group Rectangle-44">
             <label for="exampleInputPassword1">{props.label2}</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+            <input type="password" name="email"   class="form-control" id="exampleInputPassword1" placeholder="Password" onChange={handleChange}/>
         </div>
         <div class="form-group Rectangle-44">
             <label for="exampleInputPassword1">{props.label3}</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Confirm Password" />
+            <input type="password" name="email"   class="form-control" id="exampleInputPassword1" placeholder=" Confirm Password" onChange={handleChange} />
         </div>
         <p className="Forgot-your-password">{props.text6} </p>
         <button type="submit" class="Rectangle-40" onClick={() => {history.push("/Mentorform");}}>{props.button3}</button>

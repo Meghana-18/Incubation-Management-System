@@ -20,6 +20,12 @@ import MentorPayment from './MentorPayment';
 import StartupReport from './StartupReport';
 import StartupPayment from './StartupPayment';
 import PersonnelSearch from './PersonnelSearch';
+import MentorSearch from './MentorSearch';
+import StartupMeeting from './StartupMeeting';
+import MentorMeeting from './MentorMeeting';
+import StartupSearch from './StartupSearch';
+import MentorUserSearch from './MentorUserSearch';
+import StartupSearchUser from './StartupSearchUser';
 
 function App() {
   return (
@@ -44,6 +50,12 @@ function App() {
       <Route path="/startupReport" exact component={StartupReport} />
       <Route path="/startupPayment" exact component={StartupPayment} />
       <Route path="/personnelSearch" exact component={PersonnelSearch} />
+      <Route path="/mentorSearch" exact component={MentorSearch} />
+      <Route path="/startupMeeting" exact component={StartupMeeting} />
+      <Route path="/mentorMeeting" exact component={MentorMeeting} />
+      <Route path="/startupSearch" exact component={StartupSearch} />
+      <Route path="/mentorUserSearch" exact component={MentorUserSearch} />
+      <Route path="/startupSearchUser" exact component={StartupSearchUser} />
     </Switch>
   </Router>
   <Homepage />

@@ -73,8 +73,8 @@ function StartupForm(){
         </Row>
         <Row className="mb-3">
             <Form.Group as={Col} md="3" controlId="validationCustom03">
-            <Form.Label>Address</Form.Label>
-            <Form.Control type="text" placeholder="Address" required />
+            <Form.Label>Calendly Email</Form.Label>
+            <Form.Control type="text" placeholder="Calendly Email" />
             <Form.Control.Feedback type="invalid">
                 Please provide a valid response.
             </Form.Control.Feedback>

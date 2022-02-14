@@ -20,7 +20,8 @@ function Mentordashboard(){
         <RemoveScrollBar />
         <ButtonGroup className="d-flex">
         <Button variant="outline-dark" onClick={() => {history.push("/Mentordashboard");}}>My Profile</Button>
-        <Button variant="outline-dark">Meetings</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/MentorUserSearch");}}>Startup Search</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/MentorSearch");}}>Meetings</Button>
         <Button variant="outline-dark"  onClick={() => {history.push("/Mentorreport");}}>Reports</Button>
         <Button variant="outline-dark" onClick={() => {history.push("/MentorPayment");}}>Payment</Button>
         <Button variant="outline-dark" onClick={() => {history.push("/Mentorlogin");}}>Logout</Button>

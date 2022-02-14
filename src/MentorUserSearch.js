@@ -12,7 +12,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Figure from 'react-bootstrap/Figure';
 import Card from 'react-bootstrap/Card';
 
-function PersonnelSearch(){
+function MentorUserSearch(){
 
     let history= useHistory();
 
@@ -23,17 +23,18 @@ function PersonnelSearch(){
         <div>
         
         <ButtonGroup className="d-flex">
-        <Button variant="outline-dark" onClick={() => {history.push("/Admindashboard");}}>My Profile</Button>
-        <Button variant="outline-dark">Meetings</Button>
-        <Button variant="outline-dark" onClick={() => {history.push("/Personnelsearch");}}>Personnel Search</Button>
-        <Button variant="outline-dark">Forms & Reports</Button>
-        <Button variant="outline-dark" onClick={() => {history.push("/Adminlogin");}} >Logout</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/Mentordashboard");}}>My Profile</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/MentorUserSearch");}}>Startup Search</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/MentorSearch");}}>Meetings</Button>
+        <Button variant="outline-dark"  onClick={() => {history.push("/Mentorreport");}}>Reports</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/MentorPayment");}}>Payment</Button>
+        <Button variant="outline-dark" onClick={() => {history.push("/Mentorlogin");}}>Logout</Button>
         
         </ButtonGroup>
         </div>
         <div className="mainDiv">
         <div className="Rectangle-41 ">
-        <h6 className="Hello-Mentor">User Search</h6>
+        <h6 className="Hello-Mentor">Startup Search</h6>
         <Form className="d-flex searchBar">
         <FormControl
             type="search"
@@ -79,4 +80,4 @@ function PersonnelSearch(){
     )
 }
 
-export default PersonnelSearch;
+export default MentorUserSearch;

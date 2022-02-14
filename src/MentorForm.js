@@ -87,8 +87,8 @@ function MentorForm(){
             </Form.Control.Feedback>
             </Form.Group>
             <Form.Group as={Col} md="3" controlId="validationCustom05">
-            <Form.Label>Zip</Form.Label>
-            <Form.Control type="text" placeholder="Zip" required />
+            <Form.Label>Calendly Email</Form.Label>
+            <Form.Control type="text" placeholder="Calendly Email"/>
             <Form.Control.Feedback type="invalid">
                 Please provide a valid zip.
             </Form.Control.Feedback>
